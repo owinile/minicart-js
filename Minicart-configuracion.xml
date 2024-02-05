@@ -1,0 +1,40 @@
+<!-- Minicart.js -->
+
+<script src='/minicart.js'/>
+<script type='text/javascript'>
+//<![CDATA[
+// configuración inicial del carrito 
+	  paypal.minicart.render({
+	  strings:{
+	    button:'Pagar'
+	   ,buttonAlt: "Total"
+	   ,subtotal: 'Total:'
+	   ,empty: 'No hay productos en el carrito'
+	  }
+	  });
+
+      // Eventos para mostrar el carrito
+       
+      $('#viewcart').click(function (e) {
+			e.stopPropagation();
+			paypal.minicart.view.show();
+		});
+
+	  // Eventos para agregar productos al carrito
+	  
+	   $('.producto').click(function(e){
+	       e.stopPropagation();
+		    paypal.minicart.cart.add({
+			business: 'tucuenta@decorreopaypal.com', // Cuenta paypal para recibir el dinero
+			item_name: $(this).attr("titulo"),
+			 amount: $(this).attr("precio"),
+			 currency_code: 'USD',
+             return: '/p/transaccion-exitosa.html', // pagina de transaccion exitosa
+             cancel_return: '/p/transaccion-no-procesada.html', // Pagina de transaccion fallida
+
+			
+			});
+	   });
+//]]>
+</script>
+<!-- //Minicart.js -->  
