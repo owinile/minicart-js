@@ -1,4 +1,11 @@
 
+Verificar si esta instalado o no las librerias en el theme
+<head>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+</head>
 
-
+<body>
 <button precio="USD"  titulo="Titulo" class="btn btn-primary px-3 producto"><i class="fa fa-shopping-cart mr-1"></i> Add To Cart</button>
+</body>
