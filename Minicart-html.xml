@@ -9,3 +9,19 @@ Verificar si esta instalado o no las librerias en el theme
 <body>
 <button precio="USD"  titulo="Titulo" class="btn btn-primary px-3 producto"><i class="fa fa-shopping-cart mr-1"></i> Add To Cart</button>
 </body>
+
+Ejemplo:
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="buyNowButton">
+            <input type="hidden" name="cmd" value="_xclick" />
+            <input type="hidden" name="business" value="example@minicartjs.com" />
+            <input type="hidden" name="item_name" value="Rainbow" />
+            <input type="hidden" name="item_number" value="ROYGBIV" />
+            <input type="hidden" name="amount" value="2.00" />
+            <input type="hidden" name="quantity" value="1" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="hidden" name="return" value="http://www.minicartjs.com/?success" />
+            <input type="hidden" name="cancel_return" value="http://www.minicartjs.com/?cancel" />
+           
+            <input type="submit" name="submit" value="Add to cart" class="button" />
+        
+    </form>
