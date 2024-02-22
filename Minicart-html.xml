@@ -19,8 +19,7 @@ Ejemplo:
             <input type="hidden" name="amount" value="2.00" />
             <input type="hidden" name="quantity" value="1" />
             <input type="hidden" name="currency_code" value="USD" />
-            <input type="hidden" name="return" value="http://www.minicartjs.com/?success" />
-    
+            <input type="hidden" name="return" value="http://www.minicartjs.com/?success" />    
             <input type="hidden" name="cancel_return" value="http://www.minicartjs.com/?cancel" />
            
             <input type="submit" name="submit" value="Add to cart" class="button" />
