@@ -20,6 +20,9 @@ Ejemplo:
             <input type="hidden" name="quantity" value="1" />
             <input type="hidden" name="currency_code" value="USD" />
             <input type="hidden" name="return" value="http://www.minicartjs.com/?success" />
+
+    Información sobre botones en Paypal:
+    https://developer.paypal.com/api/nvp-soap/paypal-payments-standard/integration-guide/formbasics/
             <input type="hidden" name="cancel_return" value="http://www.minicartjs.com/?cancel" />
            
             <input type="submit" name="submit" value="Add to cart" class="button" />
